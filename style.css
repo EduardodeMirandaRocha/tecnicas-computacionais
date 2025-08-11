@@ -1,0 +1,49 @@
+:root {
+    --cor-fundo: #2f2f2f;        /* cinza escuro */
+    --cor-principal: #3a3a3a;    /* cinza médio para caixas */
+    --cor-secundaria: #4a4a4a;   /* cinza um pouco mais claro para botões */
+    --cor-destaque: #ffffff;     /* branco para destaque */
+    --cor-texto: #ffffff;        /* branco para texto */
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.caixa-principal {
+    background-color: var(--cor-principal);
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h1 {
+    color: var(--cor-destaque);
+}
+
+button {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-texto);
+    border: none;
+    border-radius: 15px;
+    padding: 15px;
+    margin: 8px 0; /* Espaçamento vertical entre botões */
+    width: 100%;
+    max-width: 400px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: var(--cor-destaque);
+    color: var(--cor-fundo);
+}
